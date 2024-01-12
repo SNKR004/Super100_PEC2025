@@ -1,7 +1,7 @@
 import sys
 
 class BankAccount:
-    def __init__(self, name, id, pin, balance=0):
+    def __init__(self, name, id, pin, balance):
         self.name = name
         self.id = id
         self.pin = pin
