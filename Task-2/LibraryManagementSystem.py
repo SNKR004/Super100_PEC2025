@@ -123,7 +123,7 @@ if __name__ == "__main__":
 
 
 """
-python LibraryManagementSystem.py
+Output:
 
 
 Book Data Structures and Algorithms added to PEC library!
