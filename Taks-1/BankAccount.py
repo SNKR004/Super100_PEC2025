@@ -49,7 +49,7 @@ if __name__ == "__main__":
     main()
 
 """
-python BankAccount.py
+Output:
 
 
 Deposited 100 rupees into your bank account!
