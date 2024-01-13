@@ -52,8 +52,7 @@ class Main {
 }
 
 """
-javac BankAccount.java
-java BankAccount
+Output:
     
 
 Deposited 100 rupees into your bank account!
