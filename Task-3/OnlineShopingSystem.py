@@ -41,7 +41,6 @@ class ShoppingCart:
         if product:
             if product["Available"] >= quantity:
                 self.cart.append({"id": product_id, "Name": product["Name"], "Price": product["Price"], "quantity": quantity})
-                product["Available"] -= quantity  # Reduce available quantity
                 print(f"{quantity} {product['Name']} added to cart.")
             else:
                 print(f"Not enough {product['Name']} available.")
@@ -51,14 +50,13 @@ class ShoppingCart:
     def remove_from_cart(self, product_id, quantity):
         for item in self.cart:
             if item["id"] == product_id:
-                item["quantity"] -= quantity
-                if item["quantity"] <= 0:
-                    self.cart.remove(item)
-                # Increment available quantity when removing from cart is done in the actual system
-                product = next((p for p in self.product.shopping if p["id"] == product_id), None)
-                if product:
-                    product["Available"] += quantity
-                print(f"{quantity} {item['Name']} removed from cart.")
+                if item["quantity"] >= quantity:  # Check if enough quantity is available in the cart
+                    item["quantity"] -= quantity
+                    if item["quantity"] == 0:
+                        self.cart.remove(item)
+                    print(f"{quantity} {item['Name']} removed from cart.")
+                else:
+                    print(f"Not enough {item['Name']} in cart to remove.")
                 break
         else:
             print("Product not found in cart!")
@@ -73,6 +71,7 @@ class ShoppingCart:
                     product["Available"] -= item["quantity"]  # Deduct purchased quantity from available
                 else:
                     print(f"Not enough {product['Name']} available for purchase.")
+                    return  # Stop purchasing if any item is not available
         self.cart.clear()
         print("Purchase successful! Your cart is now empty.")
 
