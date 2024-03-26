@@ -47,14 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-"""
-Output:
-
-
-Deposited 100 rupees into your bank account!
-Available Funds: 200!
-Withdrew 50 rupees from your bank account!
-Available Funds: 150!
-
-"""
