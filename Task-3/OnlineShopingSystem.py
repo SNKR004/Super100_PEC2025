@@ -19,7 +19,7 @@ class Product:
         self.order = ""
 
     def displayProducts(self):
-        print("\nITEMA:\nId\tName\tAvailable\tPrice\tOriginal Price")
+        print("\nITEMS:\nId\tName\tAvailable\tPrice\tOriginal Price")
         print("====================================================")
         for d in self.shopping:
             print(f'{d["id"]}\t{d["Name"]}\t{d["Available"]}\t\t{d["Price"]}\t{d["Original_Price"]}')
