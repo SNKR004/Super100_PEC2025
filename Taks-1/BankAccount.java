@@ -50,14 +50,3 @@ class Main {
         System.out.println(customer1.curr_balance());
     }
 }
-
-"""
-Output:
-    
-
-Deposited 100 rupees into your bank account!
-Available Funds: 200!
-Withdrew 50 rupees from your bank account!
-Available Funds: 150!
-
-"""
