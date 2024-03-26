@@ -1,6 +1,7 @@
 import csv
 import os
 
+
 class Product:
     def __init__(self):
         self.shopping = [{"id": 1001, "Name": "HP-AE12", "Available": 100, "Price": 25000, "Original_Price": 27000},
@@ -30,6 +31,7 @@ class Product:
             print(f'{d["Name"]} = {d["Available"]}')
             Total += (d["Available"])
         print("\nTotal available goods is : ", Total)
+
 
 class ShoppingCart:
     def __init__(self, product):
@@ -180,10 +182,8 @@ class User:
                 if row[0] == email and row[1] == password:
                     return True
         return False
-    
-def main():
-    product = Product()
-    snkr = User(product)
+        
 
 if __name__ == "__main__":
-    main()
+    product = Product()
+    snkr = User(product)
