@@ -50,7 +50,7 @@ class ShoppingCart:
     def remove_from_cart(self, product_id, quantity):
         for item in self.cart:
             if item["id"] == product_id:
-                if item["quantity"] >= quantity:  # Check if enough quantity is available in the cart
+                if item["quantity"] >= quantity:
                     item["quantity"] -= quantity
                     if item["quantity"] == 0:
                         self.cart.remove(item)
@@ -68,10 +68,10 @@ class ShoppingCart:
             product = next((p for p in self.product.shopping if p["id"] == item["id"]), None)
             if product:
                 if product["Available"] >= item["quantity"]:
-                    product["Available"] -= item["quantity"]  # Deduct purchased quantity from available
+                    product["Available"] -= item["quantity"]
                 else:
                     print(f"Not enough {product['Name']} available for purchase.")
-                    return  # Stop purchasing if any item is not available
+                    return
         self.cart.clear()
         print("Purchase successful! Your cart is now empty.")
 
