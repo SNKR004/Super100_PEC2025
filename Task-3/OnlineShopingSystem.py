@@ -189,3 +189,155 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+Output:
+
+python OnlineShoppingSystem.py
+
+WELCOME!
+Do you want to login (l) or sign up (s)? s
+
+Enter your email: snkr
+Create a password: 21a31a4254
+
+Account created successfully!
+Your cart is empty!
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 4
+
+ITEMA:
+Id      Name    Available       Price   Original Price
+====================================================
+1001    HP-AE12 100             25000   27000
+1002    DELL    100             35000   38000
+1003    ASUS    100             45000   47000
+1004    APPLE   100             60000   63000
+1005    ACER    100             24000   25000
+1006    SAMSUNG 100             35000   39000
+1007    OPPO    100             15000   15000
+1008    XAOMI   100             28000   30000
+1009    HUAWEI  100             20000   22000
+1010    VIVO    100             12000   13000
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 1
+Enter the product id to add to cart: 1003
+Enter the quantity: 5
+5 ASUS added to cart.
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 3
+
+Items in your cart:
+Id      Name    Price   Quantity
+===============================
+1003    ASUS    45000   5
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 2
+Enter the product id to remove from cart: 1003
+Enter the quantity: 3
+3 ASUS removed from cart.
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 3
+
+Items in your cart:
+Id      Name    Price   Quantity
+===============================
+1003    ASUS    45000   2
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 5
+
+Total price: 90000
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 6
+Total price: 90000
+Purchase successful! Your cart is now empty.
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 4
+
+ITEMA:
+Id      Name    Available       Price   Original Price
+====================================================
+1001    HP-AE12 100             25000   27000
+1002    DELL    100             35000   38000
+1003    ASUS    96              45000   47000
+1004    APPLE   100             60000   63000
+1005    ACER    100             24000   25000
+1006    SAMSUNG 100             35000   39000
+1007    OPPO    100             15000   15000
+1008    XAOMI   100             28000   30000
+1009    HUAWEI  100             20000   22000
+1010    VIVO    100             12000   13000
+
+What would you like to do?
+1. Add product to cart
+2. Remove product from cart
+3. View cart
+4. View available products
+5. View total price
+6. Buy
+7. Logout
+Enter your choice: 7
+Logging out...
