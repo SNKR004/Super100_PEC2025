@@ -17,7 +17,7 @@ What would you like to do?
 7. Logout
 Enter your choice: 4
 
-ITEMA:
+ITEMS:
 Id      Name    Available       Price   Original Price
 ====================================================
 1001    HP-AE12 100             25000   27000
@@ -121,7 +121,7 @@ What would you like to do?
 7. Logout
 Enter your choice: 4
 
-ITEMA:
+ITEMS:
 Id      Name    Available       Price   Original Price
 ====================================================
 1001    HP-AE12 100             25000   27000
